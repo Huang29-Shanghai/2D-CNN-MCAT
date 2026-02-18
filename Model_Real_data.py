@@ -19,8 +19,7 @@ import time
 
 
 class NeuroDataset(Dataset):
-    def __init__(self,data_dir: str, sampling_rate: float = 512,  #
-                 total_duration: float = 1.0,  #
+    def __init__(self,data_dir: str,
                  ):
         self.data_dir = data_dir
         self.sample_ids = self._scan_sample_ids()
